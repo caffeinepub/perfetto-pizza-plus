@@ -1,0 +1,119 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add reservation form with WhatsApp integration and floating support button",
+  "requirements": [
+    {
+      "id": "REQ-38",
+      "summary": "Update Hero section text colors to match gold icon color (#D4AF37)",
+      "acceptanceCriteria": [
+        "Location text color matches the gold icon color (#D4AF37)",
+        "Phone number text color matches the gold icon color (#D4AF37)",
+        "Hours text color matches the gold icon color (#D4AF37)",
+        "All text remains clearly readable against the card backgrounds"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update the text color classes in the three contact info cards (location, phone, hours) from the current dark charcoal color to the gold color (#D4AF37). Apply text-[#D4AF37] or use the custom Tailwind gold color variable to the text elements below the icons to match the icon color for visual consistency."
+        }
+      ]
+    },
+    {
+      "id": "REQ-39",
+      "summary": "Create ReservationSection component with professional booking form",
+      "acceptanceCriteria": [
+        "Section displays 'Reserve Your Table' as the heading",
+        "Form includes all specified fields with proper input types",
+        "Required fields are clearly marked",
+        "Number of Guests dropdown contains options 1-20",
+        "Occasion dropdown contains exactly: Birthday, Anniversary, Casual Visit, Party, Other",
+        "Date and time pickers are functional",
+        "Form styling matches the restaurant's professional theme with charcoal and gold colors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReservationSection.tsx",
+          "operation": "create",
+          "description": "Create a new ReservationSection component with a 'Reserve Your Table' heading. Build a professional booking form using controlled React state with the following fields: Full Name (text input, required), Mobile Number (text input, required), Email Address (text input, optional), Number of Guests (select dropdown with options 1-20, required), Reservation Date (date input, required), Reservation Time (time input, required), Occasion (select dropdown with options: Birthday, Anniversary, Casual Visit, Party, Other; required), and Special Request (textarea, optional). Use elegant styling consistent with the charcoal and gold theme from frontend/tailwind.config.js. Mark required fields with asterisks or visual indicators. Apply proper form layout with labels, spacing, and responsive design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-40",
+      "summary": "Add red 'Reserve Now' button with form validation",
+      "acceptanceCriteria": [
+        "Button displays '👉 Reserve Now' text",
+        "Button uses bold red styling",
+        "Form validates all required fields on button click",
+        "Error messages display for missing required fields",
+        "Form cannot submit if validation fails"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReservationSection.tsx",
+          "operation": "modify",
+          "description": "Add a bold red submit button with the text '👉 Reserve Now' to the reservation form. Implement form validation logic that checks all required fields (Full Name, Mobile Number, Number of Guests, Reservation Date, Reservation Time, Occasion) are filled before allowing submission. Use React state to track validation errors and display clear error messages beneath each field or in a summary section when required fields are missing. Prevent form submission and WhatsApp redirect if validation fails. Style the button with bold red background (e.g., bg-red-600 hover:bg-red-700) and ensure it stands out while remaining professional."
+        }
+      ]
+    },
+    {
+      "id": "REQ-41",
+      "summary": "Implement WhatsApp integration with pre-filled reservation message",
+      "acceptanceCriteria": [
+        "Clicking 'Reserve Now' with valid form data opens WhatsApp",
+        "WhatsApp message is pre-filled with the exact format specified",
+        "All form field values are correctly inserted into the message template",
+        "WhatsApp link targets the phone number +919797957878",
+        "Date and time values are formatted in a user-friendly readable format",
+        "Message text is properly URL-encoded for WhatsApp API"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ReservationSection.tsx",
+          "operation": "modify",
+          "description": "Implement WhatsApp integration in the form submission handler. When the 'Reserve Now' button is clicked and form validation passes, construct a pre-filled message using the exact template: 'Hello Perfetto Pizza Plus,\\n\\nNew Table Reservation Request:\\n\\nName: [Customer Name]\\nMobile: [Customer Number]\\nEmail: [Customer Email]\\nGuests: [Number of Guests]\\nDate: [Selected Date]\\nTime: [Selected Time]\\nOccasion: [Selected Occasion]\\nSpecial Request: [Message]\\n\\nPlease confirm my reservation. Thank you.' Insert all form field values into the template placeholders. Format the date and time values in a readable format (e.g., 'January 15, 2024' and '7:00 PM'). URL-encode the complete message text using encodeURIComponent(). Construct the WhatsApp URL as https://wa.me/919797957878?text=[encoded-message] and open it in a new window using window.open()."
+        }
+      ]
+    },
+    {
+      "id": "REQ-42",
+      "summary": "Create floating WhatsApp button for direct chat support",
+      "acceptanceCriteria": [
+        "Button is fixed at bottom-right corner of viewport",
+        "Button displays 'Chat With Us on WhatsApp' text",
+        "Button includes a WhatsApp icon",
+        "Clicking button opens WhatsApp chat with +919797957878",
+        "Button uses green WhatsApp brand colors (#25D366 or similar)",
+        "Button remains visible when scrolling",
+        "Button is properly positioned on mobile devices",
+        "Button has appropriate hover and focus states"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FloatingWhatsAppButton.tsx",
+          "operation": "create",
+          "description": "Create a FloatingWhatsAppButton component that renders a fixed position button at the bottom-right corner of the viewport. Use fixed positioning with appropriate spacing from edges (bottom: 24px, right: 24px). Display the text 'Chat With Us on WhatsApp' along with a WhatsApp icon (use lucide-react's MessageCircle or a similar icon). Style the button with WhatsApp green brand color (#25D366) background, white text, rounded corners, subtle shadow (shadow-lg), and smooth hover transitions. Implement an onClick handler that opens https://wa.me/919797957878 in a new window. Ensure the button has z-index high enough to stay above other content and remains accessible on mobile devices with proper touch target sizing. Add hover and focus states for better interactivity."
+        }
+      ]
+    },
+    {
+      "id": "REQ-43",
+      "summary": "Integrate ReservationSection and FloatingWhatsAppButton into App component",
+      "acceptanceCriteria": [
+        "ReservationSection renders between MenuSection and ExtraCharges",
+        "FloatingWhatsAppButton renders and remains visible globally",
+        "Page layout remains properly structured with all sections",
+        "No layout or spacing issues introduced"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import the ReservationSection and FloatingWhatsAppButton components at the top of the file. Add the ReservationSection component in the main layout after the MenuSection component and before the ExtraCharges component to maintain proper content flow. Add the FloatingWhatsAppButton component at the end of the App component (after Footer) so it renders globally and remains visible across all sections as users scroll. Ensure proper spacing between sections is maintained and no layout issues are introduced."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes all sections including hero, business details, menu, reservation form, extra charges, reviews, footer, and floating WhatsApp button.",
+  "frontend/src/components/Hero.tsx": "Hero section component with dark overlay and contact cards featuring gold text colors matching the icon colors for location, phone, and hours information.",
+  "frontend/src/components/BusinessDetails.tsx": "Business details section displaying updated 4.5 star rating with 36 reviews, price range, and service option cards with gold-themed icons and professional styling.",
+  "frontend/src/components/MenuSection.tsx": "Complete menu section with elegant menu hero image, organized food categories with refined styling, gold dividers between sections, and professional presentation of all menu items.",
+  "frontend/src/components/MenuCategory.tsx": "Reusable menu category component with refined card styling, gold borders and dividers, elegant typography, and professional price formatting in gold color for both size-based and single pricing layouts.",
+  "frontend/src/components/ExtraCharges.tsx": "Extra charges section with refined table styling featuring gold borders, elegant header row with sophisticated typography, and professional pricing presentation in gold color.",
+  "frontend/src/components/ReviewsSection.tsx": "Reviews section with elegant review cards featuring gold star ratings, refined borders and shadows, and clearly distinguished owner responses with gold accent borders and professional formatting.",
+  "frontend/src/components/Footer.tsx": "Footer component with charcoal background, gold accent details, elegant typography for contact information, and refined attribution link styling.",
+  "frontend/src/index.css": "Global styles defining professional restaurant color palette using OKLCH color system with deep charcoal, elegant gold, white, and off-white tones; includes typography hierarchy with serif headings and sans-serif body text, plus interactive element styles with gold accents and smooth transitions.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with professional restaurant colors (charcoal, gold, off-white), elegant font families (Cormorant Garamond for display, Inter for sans), refined border radius values, and sophisticated shadow effects.",
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags, Open Graph tags, Twitter cards, LocalBusiness structured data, and Google Fonts imports for Cormorant Garamond (serif) and Inter (sans-serif) fonts.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as the backend has no methods and all restaurant data is static.",
+  "frontend/src/components/ReservationSection.tsx": "Professional reservation form component with validation, all required fields (name, mobile, guests, date, time, occasion), optional fields (email, special request), and WhatsApp integration that sends pre-filled booking details to +919797957878.",
+  "frontend/src/components/FloatingWhatsAppButton.tsx": "Fixed position floating button at bottom-right corner with WhatsApp green branding that opens direct chat with +919797957878 when clicked."
+}

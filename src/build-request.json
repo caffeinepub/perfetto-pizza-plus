@@ -1,0 +1,155 @@
+{
+  "kind": "build_request",
+  "title": "Add reservation form with WhatsApp integration and floating support button",
+  "projectName": "Perfetto Pizza Plus",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-38",
+      "text": "Change hero section text colors in frontend/src/components/Hero.tsx to match the gold icon color (#D4AF37). Update the location text, phone number text, and hours text in the contact cards to use the same gold color as the icons for visual consistency.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "change text color into icon color"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Location text color matches the gold icon color (#D4AF37)",
+        "Phone number text color matches the gold icon color (#D4AF37)",
+        "Hours text color matches the gold icon color (#D4AF37)",
+        "All text remains clearly readable against the card backgrounds"
+      ]
+    },
+    {
+      "id": "REQ-39",
+      "text": "Create a new ReservationSection component (frontend/src/components/ReservationSection.tsx) with a section titled 'Reserve Your Table'. Include a professional booking form with the following required fields: Full Name (text input, required), Mobile Number (text input, required), Email Address (text input, optional), Number of Guests (dropdown 1-20, required), Reservation Date (date picker, required), Reservation Time (time picker, required), Occasion (dropdown with options: Birthday, Anniversary, Casual Visit, Party, Other; required), and Special Request (textarea, optional). Use elegant styling consistent with the restaurant's charcoal and gold theme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Reserve Your Table",
+          "Include a professional booking form with the following required fields"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section displays 'Reserve Your Table' as the heading",
+        "Form includes all specified fields with proper input types",
+        "Required fields are clearly marked",
+        "Number of Guests dropdown contains options 1-20",
+        "Occasion dropdown contains exactly: Birthday, Anniversary, Casual Visit, Party, Other",
+        "Date and time pickers are functional",
+        "Form styling matches the restaurant's professional theme with charcoal and gold colors"
+      ]
+    },
+    {
+      "id": "REQ-40",
+      "text": "Add a bold red 'Reserve Now' button with a pointing emoji (👉) to the reservation form in ReservationSection component. Implement form validation that checks all required fields (Full Name, Mobile Number, Number of Guests, Reservation Date, Reservation Time, Occasion) are filled before submission. Display clear error messages for any missing required fields.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Add a bold red button: 👉 \"Reserve Now\"",
+          "The form should validate required fields"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays '👉 Reserve Now' text",
+        "Button uses bold red styling",
+        "Form validates all required fields on button click",
+        "Error messages display for missing required fields",
+        "Form cannot submit if validation fails"
+      ]
+    },
+    {
+      "id": "REQ-41",
+      "text": "Implement WhatsApp integration in the ReservationSection component. When the 'Reserve Now' button is clicked and form validation passes, generate a pre-filled WhatsApp message with all customer details formatted as: 'Hello Perfetto Pizza Plus,\\n\\nNew Table Reservation Request:\\n\\nName: [Customer Name]\\nMobile: [Customer Number]\\nEmail: [Customer Email]\\nGuests: [Number of Guests]\\nDate: [Selected Date]\\nTime: [Selected Time]\\nOccasion: [Selected Occasion]\\nSpecial Request: [Message]\\n\\nPlease confirm my reservation. Thank you.' Open WhatsApp Web or WhatsApp app with this pre-filled message directed to the phone number +919797957878 using the WhatsApp API URL format (https://wa.me/919797957878?text=).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "All form details must automatically open in WhatsApp",
+          "The message must be sent directly to the owner's mobile number: +919797957878",
+          "The WhatsApp message must be pre-filled with all customer details"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking 'Reserve Now' with valid form data opens WhatsApp",
+        "WhatsApp message is pre-filled with the exact format specified",
+        "All form field values are correctly inserted into the message template",
+        "WhatsApp link targets the phone number +919797957878",
+        "Date and time values are formatted in a user-friendly readable format",
+        "Message text is properly URL-encoded for WhatsApp API"
+      ]
+    },
+    {
+      "id": "REQ-42",
+      "text": "Create a FloatingWhatsAppButton component (frontend/src/components/FloatingWhatsAppButton.tsx) that displays a floating button fixed at the bottom-right corner of the website with the text 'Chat With Us on WhatsApp'. When clicked, it should open a direct WhatsApp chat with the phone number +919797957878 using the WhatsApp API URL (https://wa.me/919797957878). Style the button with green WhatsApp brand colors, appropriate spacing from edges (e.g., 24px), a WhatsApp icon, subtle shadow, and ensure it remains visible and accessible on mobile devices.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Also add a floating WhatsApp button at the bottom-right corner of the website",
+          "Text: \"Chat With Us on WhatsApp\"",
+          "When clicked, it should open direct WhatsApp chat with the same owner number: +919797957878"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button is fixed at bottom-right corner of viewport",
+        "Button displays 'Chat With Us on WhatsApp' text",
+        "Button includes a WhatsApp icon",
+        "Clicking button opens WhatsApp chat with +919797957878",
+        "Button uses green WhatsApp brand colors (#25D366 or similar)",
+        "Button remains visible when scrolling",
+        "Button is properly positioned on mobile devices",
+        "Button has appropriate hover and focus states"
+      ]
+    },
+    {
+      "id": "REQ-43",
+      "text": "Add the ReservationSection component to the main App component (frontend/src/App.tsx) after the MenuSection and before the ExtraCharges component. Also add the FloatingWhatsAppButton component at the end of the App component so it appears globally across all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "ReservationSection renders between MenuSection and ExtraCharges",
+        "FloatingWhatsAppButton renders and remains visible globally",
+        "Page layout remains properly structured with all sections",
+        "No layout or spacing issues introduced"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use the existing charcoal and gold color theme from frontend/tailwind.config.js and frontend/index.css",
+    "Maintain consistent styling with existing components (Hero, BusinessDetails, MenuSection)",
+    "Ensure the red 'Reserve Now' button stands out while remaining professional",
+    "WhatsApp integration must use the WhatsApp API URL format (https://wa.me/) and not require any backend services",
+    "The floating WhatsApp button must not obstruct important content or interfere with page scrolling"
+  ],
+  "nonGoals": [
+    "Backend storage or processing of reservation data",
+    "Email notifications for reservations",
+    "Admin dashboard for managing reservations",
+    "SMS confirmations",
+    "Integration with third-party booking systems",
+    "Calendar synchronization",
+    "Payment processing for reservations"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

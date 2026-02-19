@@ -1,0 +1,95 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-19T14:07:26.368Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 6,
+    "implemented": 6,
+    "items": [
+      {
+        "id": "REQ-38",
+        "summary": "Change hero section text colors in frontend/src/components/Hero.tsx to match the gold icon color (#D4AF37). Update the location text, phone number text, and hours text in the contact cards to use the same gold color as the icons for visual consistency.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Hero.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx"
+        ]
+      },
+      {
+        "id": "REQ-39",
+        "summary": "Create a new ReservationSection component (frontend/src/components/ReservationSection.tsx) with a section titled 'Reserve Your Table'. Include a professional booking form with the following required fields: Full Name (text input, required), Mobile Number (text input, required), Email Address (text input, optional), Number of Guests (dropdown 1-20, required), Reservation Date (date picker, required), Reservation Time (time picker, required), Occasion (dropdown with options: Birthday, Anniversary, Casual Visit, Party, Other; required), and Special Request (textarea, optional). Use elegant styling consistent with the restaurant's charcoal and gold theme.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-40",
+        "summary": "Add a bold red 'Reserve Now' button with a pointing emoji (👉) to the reservation form in ReservationSection component. Implement form validation that checks all required fields (Full Name, Mobile Number, Number of Guests, Reservation Date, Reservation Time, Occasion) are filled before submission. Display clear error messages for any missing required fields.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-41",
+        "summary": "Implement WhatsApp integration in the ReservationSection component. When the 'Reserve Now' button is clicked and form validation passes, generate a pre-filled WhatsApp message with all customer details formatted as: 'Hello Perfetto Pizza Plus,\\n\\nNew Table Reservation Request:\\n\\nName: [Customer Name]\\nMobile: [Customer Number]\\nEmail: [Customer Email]\\nGuests: [Number of Guests]\\nDate: [Selected Date]\\nTime: [Selected Time]\\nOccasion: [Selected Occasion]\\nSpecial Request: [Message]\\n\\nPlease confirm my reservation. Thank you.' Open WhatsApp Web or WhatsApp app with this pre-filled message directed to the phone number +919797957878 using the WhatsApp API URL format (https://wa.me/919797957878?text=).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ReservationSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-42",
+        "summary": "Create a FloatingWhatsAppButton component (frontend/src/components/FloatingWhatsAppButton.tsx) that displays a floating button fixed at the bottom-right corner of the website with the text 'Chat With Us on WhatsApp'. When clicked, it should open a direct WhatsApp chat with the phone number +919797957878 using the WhatsApp API URL (https://wa.me/919797957878). Style the button with green WhatsApp brand colors, appropriate spacing from edges (e.g., 24px), a WhatsApp icon, subtle shadow, and ensure it remains visible and accessible on mobile devices.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FloatingWhatsAppButton.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FloatingWhatsAppButton.tsx"
+        ]
+      },
+      {
+        "id": "REQ-43",
+        "summary": "Add the ReservationSection component to the main App component (frontend/src/App.tsx) after the MenuSection and before the ExtraCharges component. Also add the FloatingWhatsAppButton component at the end of the App component so it appears globally across all sections.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/components/FloatingWhatsAppButton.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/ReservationSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

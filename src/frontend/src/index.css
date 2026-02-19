@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Professional Restaurant Color Palette - Deep Charcoal, Elegant Gold, White, Off-White */
+        --charcoal: 0.25 0.02 240;
+        --gold: 0.70 0.15 75;
+        --off-white: 0.97 0.01 60;
+        --soft-charcoal: 0.35 0.02 240;
+        
+        --background: 0.99 0.005 60;
+        --foreground: 0.25 0.02 240;
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 240;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 240;
+        --primary: 0.25 0.02 240;
+        --primary-foreground: 0.99 0.005 60;
+        --secondary: 0.70 0.15 75;
+        --secondary-foreground: 0.25 0.02 240;
+        --muted: 0.97 0.01 60;
+        --muted-foreground: 0.50 0.02 240;
+        --accent: 0.70 0.15 75;
+        --accent-foreground: 0.25 0.02 240;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0.005 60;
+        --border: 0.90 0.01 60;
+        --input: 0.90 0.01 60;
+        --ring: 0.70 0.15 75;
+        --chart-1: 0.25 0.02 240;
+        --chart-2: 0.70 0.15 75;
+        --chart-3: 0.97 0.01 60;
+        --chart-4: 0.50 0.02 240;
+        --chart-5: 0.35 0.02 240;
+    }
+
+    .dark {
+        --background: 0.20 0.02 240;
+        --foreground: 0.97 0.01 60;
+        --card: 0.25 0.02 240;
+        --card-foreground: 0.97 0.01 60;
+        --popover: 0.25 0.02 240;
+        --popover-foreground: 0.97 0.01 60;
+        --primary: 0.70 0.15 75;
+        --primary-foreground: 0.25 0.02 240;
+        --secondary: 0.35 0.02 240;
+        --secondary-foreground: 0.97 0.01 60;
+        --muted: 0.30 0.02 240;
+        --muted-foreground: 0.70 0.02 240;
+        --accent: 0.70 0.15 75;
+        --accent-foreground: 0.25 0.02 240;
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.97 0.01 60;
+        --border: 0.35 0.02 240;
+        --input: 0.35 0.02 240;
+        --ring: 0.70 0.15 75;
+        --chart-1: 0.70 0.15 75;
+        --chart-2: 0.25 0.02 240;
+        --chart-3: 0.50 0.02 240;
+        --chart-4: 0.97 0.01 60;
+        --chart-5: 0.35 0.02 240;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-weight: 600;
+    }
+    
+    .font-display {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+}
+
+@layer utilities {
+    .text-charcoal {
+        color: oklch(var(--charcoal));
+    }
+    
+    .text-gold {
+        color: oklch(var(--gold));
+    }
+    
+    .text-off-white {
+        color: oklch(var(--off-white));
+    }
+    
+    .text-soft-charcoal {
+        color: oklch(var(--soft-charcoal));
+    }
+    
+    .bg-charcoal {
+        background-color: oklch(var(--charcoal));
+    }
+    
+    .bg-gold {
+        background-color: oklch(var(--gold));
+    }
+    
+    .bg-off-white {
+        background-color: oklch(var(--off-white));
+    }
+    
+    .bg-soft-charcoal {
+        background-color: oklch(var(--soft-charcoal));
+    }
+    
+    .border-charcoal {
+        border-color: oklch(var(--charcoal));
+    }
+    
+    .border-gold {
+        border-color: oklch(var(--gold));
+    }
+    
+    .border-off-white {
+        border-color: oklch(var(--off-white));
+    }
+    
+    .fill-gold {
+        fill: oklch(var(--gold));
+    }
+}
+
+@layer components {
+    /* Interactive element styles with smooth transitions */
+    a, button {
+        transition: color 300ms ease-in-out;
+    }
+    
+    a:focus-visible, button:focus-visible {
+        @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-background rounded;
+    }
+}

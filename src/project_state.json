@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Modern, professional restaurant website for Perfetto Pizza Plus with full menu, business details, and reviews section",
+  "architectural_notes": [
+    "Single-page restaurant website with scroll sections",
+    "Target audience: students, families, tourists, groups, solo diners",
+    "Mobile-first responsive layout",
+    "SEO optimized with meta tags and structured data",
+    "Professional restaurant theme with refined design aesthetic",
+    "WhatsApp integration for table reservations and customer support via URL scheme",
+    "Form validation for required fields before WhatsApp redirect"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-featuring-the-restaurant-name-perfetto-pizza-plus-location-near-st-francis-school-jourian-jammu-and-kashmir-181201-phone-number-097979-57878-and-operating-hours-open-till-10-30-pm-use-warm-red-yellow-and-cream-tones-throughout",
+      "title": "Create a hero section featuring the restaurant name 'Perfetto Pizza Plus', location 'near St. Francis School, Jourian, Jammu and Kashmir 181201', phone number '097979 57878', and operating hours 'Open till 10:30 PM'. Use warm red, yellow, and cream tones throughout.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-business-details-section-displaying-rating-3-7-36-reviews-price-range-200-400-per-person-and-available-services-dine-in-takeaway-delivery-no-contact-delivery",
+      "title": "Create a business details section displaying rating '3.7 (36 reviews)', price range '₹200–400 per person', and available services: Dine-in, Takeaway, Delivery, No-contact Delivery.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-categorized-menu-section-with-price-tables-for-basic-pizza-category-dbl-cheese-margherita-green-veggie-cheese-n-mushroom-cheese-n-corn-with-prices-small-130-medium-250-large-340",
+      "title": "Create a categorized menu section with price tables for BASIC PIZZA category: DBL Cheese Margherita, Green Veggie, Cheese-n-Mushroom, Cheese-n-Corn with prices Small ₹130, Medium ₹250, Large ₹340.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-silver-pizza-category-delight-pizza-achaari-pizza-tandoori-pizza-makhani-pizza-spicy-pizza-with-prices-small-160-medium-320-large-480",
+      "title": "Create menu section for SILVER PIZZA category: Delight Pizza, Achaari Pizza, Tandoori Pizza, Makhani Pizza, Spicy Pizza with prices Small ₹160, Medium ₹320, Large ₹480.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-gold-pizza-category-lovers-pizza-chipotle-pizza-harissa-pizza-with-prices-small-200-medium-380-large-520",
+      "title": "Create menu section for GOLD PIZZA category: Lovers Pizza, Chipotle Pizza, Harissa Pizza with prices Small ₹200, Medium ₹380, Large ₹520.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-platinum-pizza-category-paradise-pizza-supreme-pizza-deluxe-pizza-with-prices-small-240-medium-440-large-560",
+      "title": "Create menu section for PLATINUM PIZZA category: Paradise Pizza, Supreme Pizza, Deluxe Pizza with prices Small ₹240, Medium ₹440, Large ₹560.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-super-pizza-category-farm-house-hot-country-indian-veggie-with-prices-small-280-medium-480-large-580",
+      "title": "Create menu section for SUPER PIZZA category: Farm House, Hot Country, Indian Veggie with prices Small ₹280, Medium ₹480, Large ₹580.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-special-pizza-category-perfetto-special-pizza-with-prices-small-300-medium-500-large-600",
+      "title": "Create menu section for SPECIAL PIZZA category: Perfetto Special Pizza with prices Small ₹300, Medium ₹500, Large ₹600.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-burgers-category-with-items-veg-burger-90-cheese-burger-100-tandoori-burger-120-achari-burger-130-peri-peri-burger-140-crispy-paneer-burger-160-special-burger-180",
+      "title": "Create menu section for BURGERS category with items: Veg Burger ₹90, Cheese Burger ₹100, Tandoori Burger ₹120, Achari Burger ₹130, Peri Peri Burger ₹140, Crispy Paneer Burger ₹160, Special Burger ₹180.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-wraps-category-with-items-aloo-patty-wrap-100-cheesy-wrap-100-spicy-wrap-110-crispy-paneer-wrap-120-tandoori-wrap-140-cheesy-saucy-wrap-140",
+      "title": "Create menu section for WRAPS category with items: Aloo Patty Wrap ₹100, Cheesy Wrap ₹100, Spicy Wrap ₹110, Crispy Paneer Wrap ₹120, Tandoori Wrap ₹140, Cheesy & Saucy Wrap ₹140.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-sandwich-category-2-pcs-with-items-grilled-sandwich-80-spicy-sandwich-90-cheesy-sandwich-100-paneer-sandwich-120-double-decker-sandwich-150",
+      "title": "Create menu section for SANDWICH category (2 pcs) with items: Grilled Sandwich ₹80, Spicy Sandwich ₹90, Cheesy Sandwich ₹100, Paneer Sandwich ₹120, Double Decker Sandwich ₹150.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-bread-category-with-items-garlic-bread-80-cheese-corn-bread-110-stuffed-bread-120-perfetto-stuffed-bread-140",
+      "title": "Create menu section for BREAD category with items: Garlic Bread ₹80, Cheese Corn Bread ₹110, Stuffed Bread ₹120, Perfetto Stuffed Bread ₹140.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-pan-pasta-gravy-category-with-items-red-pasta-140-creamy-pasta-140-tandoori-pasta-160-supreme-pasta-160",
+      "title": "Create menu section for PAN PASTA (Gravy) category with items: Red Pasta ₹140, Creamy Pasta ₹140, Tandoori Pasta ₹160, Supreme Pasta ₹160.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-baked-pasta-category-with-items-red-pasta-100-white-pasta-100-tandoori-pasta-110-makhani-pasta-110-mix-pasta-120",
+      "title": "Create menu section for BAKED PASTA category with items: Red Pasta ₹100, White Pasta ₹100, Tandoori Pasta ₹110, Makhani Pasta ₹110, Mix Pasta ₹120.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-momos-category-with-items-veg-momos-100-paneer-momos-120-fried-veg-momos-130-fried-paneer-momos-150-crispy-veg-momos-150-crispy-paneer-momos-170-chilly-veg-momos-170-chilly-paneer-momos-190-tandoori-veg-momos-190-tandoori-paneer-momos-210-special-paneer-momos-220",
+      "title": "Create menu section for MOMOS category with items: Veg Momos ₹100, Paneer Momos ₹120, Fried Veg Momos ₹130, Fried Paneer Momos ₹150, Crispy Veg Momos ₹150, Crispy Paneer Momos ₹170, Chilly Veg Momos ₹170, Chilly Paneer Momos ₹190, Tandoori Veg Momos ₹190, Tandoori Paneer Momos ₹210, Special Paneer Momos ₹220.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-noodles-category-with-items-veg-noodles-110-chilly-garlic-noodles-130-hakka-noodles-150-paneer-noodles-150-singapuri-noodles-160-butter-paneer-noodles-170",
+      "title": "Create menu section for NOODLES category with items: Veg Noodles ₹110, Chilly Garlic Noodles ₹130, Hakka Noodles ₹150, Paneer Noodles ₹150, Singapuri Noodles ₹160, Butter Paneer Noodles ₹170.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-rice-category-with-items-veg-fried-rice-140-chilly-garlic-rice-160-hakka-rice-180-singapuri-rice-200",
+      "title": "Create menu section for RICE category with items: Veg Fried Rice ₹140, Chilly Garlic Rice ₹160, Hakka Rice ₹180, Singapuri Rice ₹200.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-shakes-category-with-items-strawberry-90-vanilla-90-pineapple-90-rasmalai-100-chocolate-100-black-currant-100-butter-scotch-100-kit-kat-crunchy-110-oreo-feast-110-include-note-add-ice-cream-30-extra",
+      "title": "Create menu section for SHAKES category with items: Strawberry ₹90, Vanilla ₹90, Pineapple ₹90, Rasmalai ₹100, Chocolate ₹100, Black Currant ₹100, Butter Scotch ₹100, Kit Kat Crunchy ₹110, Oreo Feast ₹110. Include note '(Add Ice Cream ₹30 extra)'.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-mojito-category-with-items-fresh-lime-soda-60-virgin-mojito-80-mint-mojito-80-strawberry-mojito-90-green-apple-mojito-100",
+      "title": "Create menu section for MOJITO category with items: Fresh Lime Soda ₹60, Virgin Mojito ₹80, Mint Mojito ₹80, Strawberry Mojito ₹90, Green Apple Mojito ₹100.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-menu-section-for-desserts-category-with-items-ice-cream-vanilla-50-lava-cake-70-lava-cake-with-ice-cream-90",
+      "title": "Create menu section for DESSERTS category with items: Ice Cream Vanilla ₹50, Lava Cake ₹70, Lava Cake with Ice Cream ₹90.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-extra-charges-section-displaying-cheese-burst-base-small-50-medium-80-large-120-thin-crust-base-small-10-medium-20-large-30-extra-cheese-small-30-medium-50-large-70-extra-toppings-small-20-medium-40-large-50",
+      "title": "Create EXTRA CHARGES section displaying: Cheese Burst Base (Small ₹50, Medium ₹80, Large ₹120), Thin Crust Base (Small ₹10, Medium ₹20, Large ₹30), Extra Cheese (Small ₹30, Medium ₹50, Large ₹70), Extra Toppings (Small ₹20, Medium ₹40, Large ₹50).",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-reviews-section-displaying-positive-highlights-delicious-and-fresh-food-cozy-and-trendy-atmosphere-good-for-students-and-families-and-constructive-feedback-cheese-quantity-concern-delivery-service-issues-some-pricing-feedback-with-a-layout-for-professional-owner-responses",
+      "title": "Create a reviews section displaying positive highlights ('Delicious and fresh food', 'Cozy and trendy atmosphere', 'Good for students and families') and constructive feedback ('Cheese quantity concern', 'Delivery service issues', 'Some pricing feedback') with a layout for professional owner responses.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobile-responsive-design-ensuring-all-sections-hero-business-details-menu-categories-reviews-adapt-properly-to-small-screens",
+      "title": "Implement mobile-responsive design ensuring all sections (hero, business details, menu categories, reviews) adapt properly to small screens.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-optimization-including-proper-meta-tags-semantic-html-structure-heading-hierarchy-and-descriptive-content-for-local-search-visibility-targeting-jammu-and-kashmir-location",
+      "title": "Implement SEO optimization including proper meta tags, semantic HTML structure, heading hierarchy, and descriptive content for local search visibility targeting Jammu and Kashmir location.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-modern-cozy-and-trendy-visual-design-throughout-the-website-using-warm-red-yellow-and-cream-color-palette-with-contemporary-typography-and-layout-patterns-that-appeal-to-students-families-tourists-groups-and-solo-diners",
+      "title": "Apply a modern, cozy, and trendy visual design throughout the website using warm red, yellow, and cream color palette with contemporary typography and layout patterns that appeal to students, families, tourists, groups, and solo diners.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-warm-red-yellow-and-cream-color-palette-with-a-sophisticated-professional-restaurant-color-scheme-using-deep-charcoal-2c2c2c-elegant-gold-accents-d4af37-crisp-white-ffffff-and-soft-off-white-f8f6f3-for-backgrounds-update-all-css-custom-properties-in-frontend-index-css-and-frontend-tailwind-config-js-to-reflect-the-new-professional-palette",
+      "title": "Replace the current warm red, yellow, and cream color palette with a sophisticated professional restaurant color scheme using deep charcoal (#2C2C2C), elegant gold accents (#D4AF37), crisp white (#FFFFFF), and soft off-white (#F8F6F3) for backgrounds. Update all CSS custom properties in frontend/index.css and frontend/tailwind.config.js to reflect the new professional palette.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-typography-to-use-elegant-serif-headings-playfair-display-or-cormorant-garamond-for-restaurant-name-and-section-titles-paired-with-clean-sans-serif-body-text-inter-or-source-sans-pro-for-menu-items-and-descriptions-ensure-font-weights-and-sizes-create-a-clear-visual-hierarchy-appropriate-for-upscale-dining",
+      "title": "Update typography to use elegant serif headings (Playfair Display or Cormorant Garamond) for restaurant name and section titles, paired with clean sans-serif body text (Inter or Source Sans Pro) for menu items and descriptions. Ensure font weights and sizes create a clear visual hierarchy appropriate for upscale dining.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-hero-component-frontend-src-components-hero-tsx-with-a-more-refined-layout-use-a-darker-overlay-on-the-background-image-for-better-text-contrast-add-subtle-gold-accent-borders-or-dividers-increase-whitespace-around-elements-and-ensure-the-contact-cards-have-an-elegant-card-design-with-soft-shadows-and-refined-spacing",
+      "title": "Redesign the Hero component (frontend/src/components/Hero.tsx) with a more refined layout: use a darker overlay on the background image for better text contrast, add subtle gold accent borders or dividers, increase whitespace around elements, and ensure the contact cards have an elegant card design with soft shadows and refined spacing.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refine-the-menusection-and-menucategory-components-frontend-src-components-menusection-tsx-frontend-src-components-menucategory-tsx-to-use-a-more-upscale-presentation-add-subtle-borders-and-dividers-in-gold-increase-spacing-between-menu-items-use-refined-card-backgrounds-with-subtle-shadows-and-ensure-price-typography-is-elegant-and-clear-with-proper-alignment",
+      "title": "Refine the MenuSection and MenuCategory components (frontend/src/components/MenuSection.tsx, frontend/src/components/MenuCategory.tsx) to use a more upscale presentation: add subtle borders and dividers in gold, increase spacing between menu items, use refined card backgrounds with subtle shadows, and ensure price typography is elegant and clear with proper alignment.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-businessdetails-component-frontend-src-components-businessdetails-tsx-with-a-more-sophisticated-design-use-subtle-gold-icons-refined-card-layouts-with-elegant-borders-professional-star-rating-display-and-ensure-service-badges-have-an-upscale-appearance-with-proper-spacing-and-refined-styling",
+      "title": "Update the BusinessDetails component (frontend/src/components/BusinessDetails.tsx) with a more sophisticated design: use subtle gold icons, refined card layouts with elegant borders, professional star rating display, and ensure service badges have an upscale appearance with proper spacing and refined styling.",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-reviewssection-component-frontend-src-components-reviewssection-tsx-with-professional-styling-use-elegant-card-layouts-for-reviews-with-subtle-shadows-refined-typography-for-customer-feedback-gold-accent-elements-for-star-ratings-and-ensure-owner-responses-are-visually-distinguished-with-professional-formatting-and-appropriate-spacing",
+      "title": "Redesign the ReviewsSection component (frontend/src/components/ReviewsSection.tsx) with professional styling: use elegant card layouts for reviews with subtle shadows, refined typography for customer feedback, gold accent elements for star ratings, and ensure owner responses are visually distinguished with professional formatting and appropriate spacing.",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-extracharges-component-frontend-src-components-extracharges-tsx-with-refined-table-styling-use-subtle-borders-in-gold-or-charcoal-elegant-header-row-styling-proper-spacing-between-rows-and-columns-and-ensure-the-pricing-table-has-a-clean-professional-appearance-consistent-with-upscale-restaurant-menus",
+      "title": "Update the ExtraCharges component (frontend/src/components/ExtraCharges.tsx) with refined table styling: use subtle borders in gold or charcoal, elegant header row styling, proper spacing between rows and columns, and ensure the pricing table has a clean, professional appearance consistent with upscale restaurant menus.",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-refine-the-footer-component-frontend-src-components-footer-tsx-with-professional-styling-use-charcoal-background-with-gold-accents-elegant-typography-for-contact-information-proper-spacing-and-alignment-and-ensure-all-footer-elements-are-visually-balanced-and-consistent-with-the-upscale-restaurant-theme",
+      "title": "Refine the Footer component (frontend/src/components/Footer.tsx) with professional styling: use charcoal background with gold accents, elegant typography for contact information, proper spacing and alignment, and ensure all footer elements are visually balanced and consistent with the upscale restaurant theme.",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-interactive-elements-buttons-links-hover-states-use-refined-professional-styling-subtle-gold-hover-effects-smooth-transitions-elegant-focus-states-with-gold-outlines-and-proper-contrast-ratios-for-accessibility-while-maintaining-the-upscale-aesthetic",
+      "title": "Ensure all interactive elements (buttons, links, hover states) use refined professional styling: subtle gold hover effects, smooth transitions, elegant focus states with gold outlines, and proper contrast ratios for accessibility while maintaining the upscale aesthetic.",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-opacity-of-the-dark-overlay-on-the-hero-background-image-in-frontend-src-components-hero-tsx-to-improve-text-readability-the-current-gradient-overlay-is-not-providing-sufficient-contrast-for-the-white-text-and-gold-elements-to-be-clearly-visible-against-the-background-image",
+      "title": "Increase the opacity of the dark overlay on the hero background image in frontend/src/components/Hero.tsx to improve text readability. The current gradient overlay is not providing sufficient contrast for the white text and gold elements to be clearly visible against the background image.",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-hero-section-text-colors-to-dark-in-frontend-src-components-hero-tsx-for-improved-visibility-update-location-text-phone-number-and-hours-text-from-their-current-light-colors-to-dark-charcoal-colors-that-contrast-well-against-the-background-overlay-ensure-all-text-in-contact-cards-remains-clearly-readable",
+      "title": "Change hero section text colors to dark in frontend/src/components/Hero.tsx for improved visibility. Update location text, phone number, and hours text from their current light colors to dark charcoal colors that contrast well against the background overlay. Ensure all text in contact cards remains clearly readable.",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-restaurant-rating-from-3-7-to-4-5-in-frontend-src-components-businessdetails-tsx-change-the-displayed-rating-value-while-maintaining-the-same-review-count-36-reviews-and-star-rating-display-formatting",
+      "title": "Update restaurant rating from 3.7 to 4.5 in frontend/src/components/BusinessDetails.tsx. Change the displayed rating value while maintaining the same review count (36 reviews) and star rating display formatting.",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-hero-section-text-colors-in-frontend-src-components-hero-tsx-to-match-the-gold-icon-color-d4af37-update-the-location-text-phone-number-text-and-hours-text-in-the-contact-cards-to-use-the-same-gold-color-as-the-icons-for-visual-consistency",
+      "title": "Change hero section text colors in frontend/src/components/Hero.tsx to match the gold icon color (#D4AF37). Update the location text, phone number text, and hours text in the contact cards to use the same gold color as the icons for visual consistency.",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-reservationsection-component-frontend-src-components-reservationsection-tsx-with-a-section-titled-reserve-your-table-include-a-professional-booking-form-with-the-following-required-fields-full-name-text-input-required-mobile-number-text-input-required-email-address-text-input-optional-number-of-guests-dropdown-1-20-required-reservation-date-date-picker-required-reservation-time-time-picker-required-occasion-dropdown-with-options-birthday-anniversary-casual-visit-party-other-required-and-special-request-textarea-optional-use-elegant-styling-consistent-with-the-restaurant-s-charcoal-and-gold-theme",
+      "title": "Create a new ReservationSection component (frontend/src/components/ReservationSection.tsx) with a section titled 'Reserve Your Table'. Include a professional booking form with the following required fields: Full Name (text input, required), Mobile Number (text input, required), Email Address (text input, optional), Number of Guests (dropdown 1-20, required), Reservation Date (date picker, required), Reservation Time (time picker, required), Occasion (dropdown with options: Birthday, Anniversary, Casual Visit, Party, Other; required), and Special Request (textarea, optional). Use elegant styling consistent with the restaurant's charcoal and gold theme.",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-bold-red-reserve-now-button-with-a-pointing-emoji-to-the-reservation-form-in-reservationsection-component-implement-form-validation-that-checks-all-required-fields-full-name-mobile-number-number-of-guests-reservation-date-reservation-time-occasion-are-filled-before-submission-display-clear-error-messages-for-any-missing-required-fields",
+      "title": "Add a bold red 'Reserve Now' button with a pointing emoji (👉) to the reservation form in ReservationSection component. Implement form validation that checks all required fields (Full Name, Mobile Number, Number of Guests, Reservation Date, Reservation Time, Occasion) are filled before submission. Display clear error messages for any missing required fields.",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-whatsapp-integration-in-the-reservationsection-component-when-the-reserve-now-button-is-clicked-and-form-validation-passes-generate-a-pre-filled-whatsapp-message-with-all-customer-details-formatted-as-hello-perfetto-pizza-plus-n-nnew-table-reservation-request-n-nname-customer-name-nmobile-customer-number-nemail-customer-email-nguests-number-of-guests-ndate-selected-date-ntime-selected-time-noccasion-selected-occasion-nspecial-request-message-n-nplease-confirm-my-reservation-thank-you-open-whatsapp-web-or-whatsapp-app-with-this-pre-filled-message-directed-to-the-phone-number-919797957878-using-the-whatsapp-api-url-format-https-wa-me-919797957878-text",
+      "title": "Implement WhatsApp integration in the ReservationSection component. When the 'Reserve Now' button is clicked and form validation passes, generate a pre-filled WhatsApp message with all customer details formatted as: 'Hello Perfetto Pizza Plus,\\n\\nNew Table Reservation Request:\\n\\nName: [Customer Name]\\nMobile: [Customer Number]\\nEmail: [Customer Email]\\nGuests: [Number of Guests]\\nDate: [Selected Date]\\nTime: [Selected Time]\\nOccasion: [Selected Occasion]\\nSpecial Request: [Message]\\n\\nPlease confirm my reservation. Thank you.' Open WhatsApp Web or WhatsApp app with this pre-filled message directed to the phone number +919797957878 using the WhatsApp API URL format (https://wa.me/919797957878?text=).",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-floatingwhatsappbutton-component-frontend-src-components-floatingwhatsappbutton-tsx-that-displays-a-floating-button-fixed-at-the-bottom-right-corner-of-the-website-with-the-text-chat-with-us-on-whatsapp-when-clicked-it-should-open-a-direct-whatsapp-chat-with-the-phone-number-919797957878-using-the-whatsapp-api-url-https-wa-me-919797957878-style-the-button-with-green-whatsapp-brand-colors-appropriate-spacing-from-edges-e-g-24px-a-whatsapp-icon-subtle-shadow-and-ensure-it-remains-visible-and-accessible-on-mobile-devices",
+      "title": "Create a FloatingWhatsAppButton component (frontend/src/components/FloatingWhatsAppButton.tsx) that displays a floating button fixed at the bottom-right corner of the website with the text 'Chat With Us on WhatsApp'. When clicked, it should open a direct WhatsApp chat with the phone number +919797957878 using the WhatsApp API URL (https://wa.me/919797957878). Style the button with green WhatsApp brand colors, appropriate spacing from edges (e.g., 24px), a WhatsApp icon, subtle shadow, and ensure it remains visible and accessible on mobile devices.",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-reservationsection-component-to-the-main-app-component-frontend-src-app-tsx-after-the-menusection-and-before-the-extracharges-component-also-add-the-floatingwhatsappbutton-component-at-the-end-of-the-app-component-so-it-appears-globally-across-all-sections",
+      "title": "Add the ReservationSection component to the main App component (frontend/src/App.tsx) after the MenuSection and before the ExtraCharges component. Also add the FloatingWhatsAppButton component at the end of the App component so it appears globally across all sections.",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with restaurant branding, location, and contact info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Business details section showing rating, hours, services, and price range",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Categorized menu with price tables for all items (pizzas, burgers, wraps, sandwiches, bread, pasta, momos, noodles, rice, shakes, mojitos, desserts, extras)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Reviews section with positive/constructive feedback and owner response layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Mobile responsive design with warm red, yellow, and cream color scheme",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "SEO optimization for local search visibility",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Professional restaurant theme with refined design aesthetic",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update restaurant rating from 3.7 to 4.5",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Change hero section text colors to match icon colors for better visibility",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add 'Reserve Your Table' section with booking form (name, mobile, email, guests, date, time, occasion, special request)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Implement WhatsApp form submission that validates required fields and opens WhatsApp with pre-filled reservation message to +919797957878",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add floating WhatsApp support button at bottom-right corner linking to +919797957878",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Perfetto Pizza Plus",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

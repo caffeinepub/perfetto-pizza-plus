@@ -1,0 +1,113 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-change-hero-section-text-colors-in-frontend-src-components-hero-tsx-to-match-the-gold-icon-color-d4af37-update-the-location-text-phone-number-text-and-hours-text-in-the-contact-cards-to-use-the-same-gold-color-as-the-icons-for-visual-consistency",
+      "featureTitle": "Change hero section text colors in frontend/src/components/Hero.tsx to match the gold icon color (#D4AF37). Update the location text, phone number text, and hours text in the contact cards to use the same gold color as the icons for visual consistency.",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-new-reservationsection-component-frontend-src-components-reservationsection-tsx-with-a-section-titled-reserve-your-table-include-a-professional-booking-form-with-the-following-required-fields-full-name-text-input-required-mobile-number-text-input-required-email-address-text-input-optional-number-of-guests-dropdown-1-20-required-reservation-date-date-picker-required-reservation-time-time-picker-required-occasion-dropdown-with-options-birthday-anniversary-casual-visit-party-other-required-and-special-request-textarea-optional-use-elegant-styling-consistent-with-the-restaurant-s-charcoal-and-gold-theme",
+      "featureTitle": "Create a new ReservationSection component (frontend/src/components/ReservationSection.tsx) with a section titled 'Reserve Your Table'. Include a professional booking form with the following required fields: Full Name (text input, required), Mobile Number (text input, required), Email Address (text input, optional), Number of Guests (dropdown 1-20, required), Reservation Date (date picker, required), Reservation Time (time picker, required), Occasion (dropdown with options: Birthday, Anniversary, Casual Visit, Party, Other; required), and Special Request (textarea, optional). Use elegant styling consistent with the restaurant's charcoal and gold theme.",
+      "files": [
+        "frontend/src/components/ReservationSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-39"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-bold-red-reserve-now-button-with-a-pointing-emoji-to-the-reservation-form-in-reservationsection-component-implement-form-validation-that-checks-all-required-fields-full-name-mobile-number-number-of-guests-reservation-date-reservation-time-occasion-are-filled-before-submission-display-clear-error-messages-for-any-missing-required-fields",
+      "featureTitle": "Add a bold red 'Reserve Now' button with a pointing emoji (👉) to the reservation form in ReservationSection component. Implement form validation that checks all required fields (Full Name, Mobile Number, Number of Guests, Reservation Date, Reservation Time, Occasion) are filled before submission. Display clear error messages for any missing required fields.",
+      "files": [
+        "frontend/src/components/ReservationSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-40"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-whatsapp-integration-in-the-reservationsection-component-when-the-reserve-now-button-is-clicked-and-form-validation-passes-generate-a-pre-filled-whatsapp-message-with-all-customer-details-formatted-as-hello-perfetto-pizza-plus-n-nnew-table-reservation-request-n-nname-customer-name-nmobile-customer-number-nemail-customer-email-nguests-number-of-guests-ndate-selected-date-ntime-selected-time-noccasion-selected-occasion-nspecial-request-message-n-nplease-confirm-my-reservation-thank-you-open-whatsapp-web-or-whatsapp-app-with-this-pre-filled-message-directed-to-the-phone-number-919797957878-using-the-whatsapp-api-url-format-https-wa-me-919797957878-text",
+      "featureTitle": "Implement WhatsApp integration in the ReservationSection component. When the 'Reserve Now' button is clicked and form validation passes, generate a pre-filled WhatsApp message with all customer details formatted as: 'Hello Perfetto Pizza Plus,\\n\\nNew Table Reservation Request:\\n\\nName: [Customer Name]\\nMobile: [Customer Number]\\nEmail: [Customer Email]\\nGuests: [Number of Guests]\\nDate: [Selected Date]\\nTime: [Selected Time]\\nOccasion: [Selected Occasion]\\nSpecial Request: [Message]\\n\\nPlease confirm my reservation. Thank you.' Open WhatsApp Web or WhatsApp app with this pre-filled message directed to the phone number +919797957878 using the WhatsApp API URL format (https://wa.me/919797957878?text=).",
+      "files": [
+        "frontend/src/components/ReservationSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-41"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-floatingwhatsappbutton-component-frontend-src-components-floatingwhatsappbutton-tsx-that-displays-a-floating-button-fixed-at-the-bottom-right-corner-of-the-website-with-the-text-chat-with-us-on-whatsapp-when-clicked-it-should-open-a-direct-whatsapp-chat-with-the-phone-number-919797957878-using-the-whatsapp-api-url-https-wa-me-919797957878-style-the-button-with-green-whatsapp-brand-colors-appropriate-spacing-from-edges-e-g-24px-a-whatsapp-icon-subtle-shadow-and-ensure-it-remains-visible-and-accessible-on-mobile-devices",
+      "featureTitle": "Create a FloatingWhatsAppButton component (frontend/src/components/FloatingWhatsAppButton.tsx) that displays a floating button fixed at the bottom-right corner of the website with the text 'Chat With Us on WhatsApp'. When clicked, it should open a direct WhatsApp chat with the phone number +919797957878 using the WhatsApp API URL (https://wa.me/919797957878). Style the button with green WhatsApp brand colors, appropriate spacing from edges (e.g., 24px), a WhatsApp icon, subtle shadow, and ensure it remains visible and accessible on mobile devices.",
+      "files": [
+        "frontend/src/components/FloatingWhatsAppButton.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-42"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-reservationsection-component-to-the-main-app-component-frontend-src-app-tsx-after-the-menusection-and-before-the-extracharges-component-also-add-the-floatingwhatsappbutton-component-at-the-end-of-the-app-component-so-it-appears-globally-across-all-sections",
+      "featureTitle": "Add the ReservationSection component to the main App component (frontend/src/App.tsx) after the MenuSection and before the ExtraCharges component. Also add the FloatingWhatsAppButton component at the end of the App component so it appears globally across all sections.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-43"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
